@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(229, 240, 242);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    margin: 150px auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.reviews-container h1 {
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
+}
+
+.reviews-container .underline {
+    width: 30%;
+    height: 4px;
+    background: rgb(119, 140, 245);
+}
+
+.content {
+    padding: 20px;
+    background: azure;
+    box-shadow: 0 5px 10px 5px rgb(226, 216, 216);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    text-align: center;
+}
+
+.pic-container {
+    --image-bg: rgb(106, 182, 233);
+}
+
+.profile {
+    position: relative;
+    width: 200px;
+}
+
+.pic-container::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--image-bg);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.quotation-mark {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    left: 10px;
+}
+
+.user-name {
+    font-family: monospace;
+    letter-spacing: .25rem;
+}
+
+.title {
+    text-transform: uppercase;
+    color:rgb(0, 153, 255);
+    font-family: "Josefin Sans";
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment {
+    font-size: 1.15rem;
+    color: gray;
+    height: 5rem;
+}
+
+.change-buttons button {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-size: cover;
+    margin: 10px;
+    filter: invert(75%) sepia(29%) saturate(7180%) hue-rotate(182deg) brightness(100%) contrast(94%);
+}
+
+.change-buttons button:hover {
+    filter: invert(75%) sepia(29%) saturate(7180%) hue-rotate(150deg) brightness(90%) contrast(80%);
+}
+
+.left {
+    background-image: url("images/left-arrow.png");
+}
+
+.rigth {
+    background-image: url("images/right-arrow.png");
+}
+
+.surprise-button {
+    background-color: transparent;
+    padding: 5px;
+    text-transform: capitalize;
+    color:rgb(0, 153, 255);
+    border-radius: 7px;
+    border: 2px solid rgb(129, 129, 239);
+    border-right-color: rgb(111, 110, 125);
+    border-bottom-color: rgb(111, 110, 125);
+    transition: background-color .5s, color .5s;
+    cursor: pointer;
+}
+
+.surprise-button:hover {
+    background-color: rgb(0, 153, 255);
+    color: black;
+}
+
+.surprise-button:active {
+    border: 2px solid rgb(111, 110, 125);
+    border-right-color: rgb(129, 129, 239);
+    border-bottom-color: rgb(129, 129, 239);
+}
